@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    bool ison = false;
+    [SerializeField] GameObject InformationPanel;
+    public void togglePanel()
+    {
+        if
+        (ison)
+        {
+            InformationPanel.SetActive(false);
+            ison = false;
+        }
+        else
+        {
+            InformationPanel.SetActive(true);
+            ison = true;
+        }
+    }
